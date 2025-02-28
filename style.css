@@ -123,67 +123,87 @@ h6{
     padding-left:20px;
     margin-bottom:200px;
 }*/
- body {
-        background-color: rgb(247, 236, 221);
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(247, 236, 221);
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 15px 20px;
+}
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    margin: 0 15px;
+}
+ul li a {
+    color: powderblue;
+    text-decoration: none;
+    font-size: 18px;
+}
+#hire {
+    background-color: orangered;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+.text {
+    max-width: 500px;
+    margin-right: 20px;
+}
+#image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Sections */
+section {
+    text-align: center;
+    padding: 40px 20px;
+}
+.work, .contact {
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     nav {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: black;
-        padding: 10px 20px;
+        flex-direction: column;
+        text-align: center;
     }
     ul {
-        display: flex;
-        list-style: none;
-        padding: 0;
+        flex-direction: column;
+        padding: 10px 0;
     }
-    ul li a, #hire {
-        color: white;
-        margin: 0 15px;
-        text-decoration: none;
-        font-size: 18px;
-    }
-    #hire {
-        background: orangered;
-        padding: 8px 15px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
+    ul li {
+        margin-bottom: 10px;
     }
     .container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
         text-align: center;
-        padding: 20px;
     }
-    #image img {
-        width: 100%;
-        max-width: 350px;
-        border-radius: 10px;
+    .text, #image {
+        margin: 0 auto;
     }
-    @media (max-width: 768px) {
-        nav {
-            flex-direction: column;
-            align-items: center;
-        }
-        ul {
-            flex-direction: column;
-            text-align: center;
-        }
-        .container {
-            flex-direction: column;
-        }
-        h2 {
-            font-size: 30px;
-        }
-        h3 {
-            font-size: 20px;
-        }
-    }
+}

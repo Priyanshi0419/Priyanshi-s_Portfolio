@@ -1,4 +1,4 @@
-body{
+/*body{
     background-color:rgb(247, 236, 221);
 }
 nav{
@@ -122,4 +122,68 @@ h6{
     text-align: left;
     padding-left:20px;
     margin-bottom:200px;
-}
+}*/
+ body {
+        background-color: rgb(247, 236, 221);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        padding: 10px 20px;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+    ul li a, #hire {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    #hire {
+        background: orangered;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+    #image img {
+        width: 100%;
+        max-width: 350px;
+        border-radius: 10px;
+    }
+    @media (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            align-items: center;
+        }
+        ul {
+            flex-direction: column;
+            text-align: center;
+        }
+        .container {
+            flex-direction: column;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }

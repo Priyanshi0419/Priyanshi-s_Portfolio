@@ -1,209 +1,80 @@
-/*body{
-    background-color:rgb(247, 236, 221);
-}
-nav{
-    width:100%;
-    display:flex;
-    justify-content: center;
-    justify-content: space-around;
-    margin-top:10px;
-    background-color: black;
-    
-}
-ul {
-    display:flex;
-    list-style: none;
-  
-  }
-ul button{
- 
 
-    width:95px;
-    height:34px;
-    background-color:orangered;
-    color:white;
-    border-radius:10%;
-    font-size:15px;
-    border:none;
-}
-ul li a{
-    margin-inline:25px;
-    color:powderblue;
-   text-transform:uppercase;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size:20px;
-}
-ul li a:hover{
-    font-size:25px;
-    text-decoration: underline;
-    font-weight: 400;
-}
-ul button:hover{
-    border:2px solid black;
-   color:orangered;
-   background-color:white;
-}
-.container{
-    display:flex;
-   padding-left:70px;
-    margin-top:40px;
-}
-.text{
-margin-top :75px;
- 
-   
-}
-#image{
-    margin-left:150px;
-    border:2px solid black;
-}
 
-h1{
-   font-size:40px;
-   color:khaki;
-}
-h2{
-font-size:50px;
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-weight:200;
+        body {
+            background-color: rgb(247, 236, 221);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-color:brown;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: black;
+            flex-wrap: wrap;
+        }
 
-}
-h3{
-    font-size:25px;  
-    font-family: Arial, Helvetica, sans-serif; 
-    color:black;
-      
-}
-#intro{
-    font-size:25px;
-    color:navy;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 300;
-}
-h4{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color:purple;
-    margin-top:120px;
-    text-decoration: underline;
-    font-size:40px;
-    text-align:center;
-}
-.work{
-    font-size:25px;
-    position:relative;
-    left:45px;
-}
-h5{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color:olivedrab;
-    margin-top:300px;
-    text-decoration: underline;
-    font-size:40px;
-    text-align:center; 
-}
-.contact{
-    font-size:25px;
-    position:relative;
-    left:45px; 
-}
-h6{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color:rgb(6, 47, 55);
-    margin-top:150px;
-    text-decoration: underline;
-    font-size:40px;
-    text-align:center; 
-}
-#about{
-    font-size: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: left;
-    padding-left:20px;
-    margin-bottom:200px;
-}*/
-body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(247, 236, 221);
-    margin: 0;
-    padding: 0;
-}
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 15px 20px;
-}
-ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-ul li {
-    margin: 0 15px;
-}
-ul li a {
-    color: powderblue;
-    text-decoration: none;
-    font-size: 18px;
-}
-#hire {
-    background-color: orangered;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
+        nav h1 {
+            color: khaki;
+            font-size: 24px;
+        }
 
-/* Hero Section */
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 50px 20px;
-}
-.text {
-    max-width: 500px;
-    margin-right: 20px;
-}
-#image img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
 
-/* Sections */
-section {
-    text-align: center;
-    padding: 40px 20px;
-}
-.work, .contact {
-    font-size: 20px;
-}
+        nav ul li {
+            display: inline;
+        }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        text-align: center;
-    }
-    ul {
-        flex-direction: column;
-        padding: 10px 0;
-    }
-    ul li {
-        margin-bottom: 10px;
-    }
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .text, #image {
-        margin: 0 auto;
-    }
-}
+        nav ul li a {
+            color: powderblue;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        #hire {
+            background-color: orangered;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .text {
+            max-width: 500px;
+        }
+
+        #image img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .container {
+                flex-direction: column;
+            }
+        }
